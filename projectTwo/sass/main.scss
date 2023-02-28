@@ -1,0 +1,13 @@
+//base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+
+//block
+@import "./block/header.scss";
+@import "./block/hero.scss";
+@import "./block/offers";
+@import "./block/info";
+@import "./block/news";
+@import "./block/footer";

@@ -1,0 +1,113 @@
+.hero{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 37px;
+    img{
+        width: 100%;
+    }
+    .hero__block__one{
+        
+        position: relative;
+        align-self: center;
+        max-width: 343px;
+        z-index: 4;
+        margin-left: 65px;
+        span{
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 400;
+            font-family:'Playfair Display', serif;
+            line-height: 1.3;
+            margin-bottom: 39px;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.5;
+            margin-bottom: 64px;
+        }
+        a{
+            font-family:'Roboto', sans-serif ;
+            color: $clorLink;
+            padding: 26px 38px;
+            background: $bgFandHero;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.166;
+            text-transform: uppercase;
+        }
+        a:hover,a:active{
+            background-color:$hoverLink;
+            
+        }
+        
+        .title__hero::before{
+            content: '';
+            display:inline-block;
+            text-align: center;
+            vertical-align: middle;
+            width: 50px;
+            height: 1px;
+            background-color: $dachHover;
+            margin-left: -65px;
+            margin-right: 15px;
+
+        }
+    }
+    .hero__block__two{
+        margin-top: 138px;
+        position: relative;
+        z-index: 4;
+        p::after{
+            content: '';
+            display:inline-block;
+            text-align: center;
+            vertical-align: middle;
+            width: 50px;
+            height: 1px;
+            background-color: $dachHover;
+            margin-right: -65px;
+            margin-left: 15px;
+        }
+    }
+    .hero__block__three{
+        position: relative;
+        align-self: center;
+        z-index: 2;
+        img{ 
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0);
+        }
+    }
+    .hero__block__four{
+        align-self: flex-end;
+        margin-bottom: 116px;
+        p::before{
+            content: '';
+            display:inline-block;
+            text-align: center;
+            vertical-align: middle;
+            width: 50px;
+            height: 1px;
+            background-color: $dachHover;
+            margin-left: -65px;
+            margin-right: 15px;
+        }
+    }
+    .three__decorative-element{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(./../img/main/ellipse-watch.svg);
+        background-repeat: no-repeat;
+        top: 8px;
+        right: 190px;
+        z-index: 1;
+    }
+}
+
+.hero__section{
+    background-color:#FDFDFB;
+}

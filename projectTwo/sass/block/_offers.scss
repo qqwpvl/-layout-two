@@ -1,0 +1,91 @@
+.popular-offers {
+    padding-top:75px;
+    h2{
+        text-align: center;
+    }
+    margin-bottom: 86px;
+}
+
+.link__top__offers{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+        padding-bottom: 11.5px;
+        border-bottom: 1px solid #C4C0B6;
+    }
+    a:hover{
+        color:$hoverLink;
+        border-bottom: 1px solid $hoverLink;
+    }
+}
+
+.popular-offers__watch-models {
+    ul{
+        margin-top: 25.5px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            position: relative;
+            flex-shrink: 0;
+            background-color: #FDFDFB;
+            padding: 40px 29px 40px 28px;
+            .span-offers{
+                display: inline-block;
+                font-weight: 700;
+                font-size: 14px;
+                font-family: 'Playfair Display', serif;
+                line-height: 1.7;
+                margin-bottom: 10px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 12px;
+                font-family: 'Prata';
+            }
+            a{
+                display: block;
+                font-size: 16px;
+                font-family: 'Playfair Display';
+                
+            }
+        }
+        
+        a::before{
+            content: '';
+            display:inline-block;
+            text-align: center;
+            vertical-align: middle;
+            width: 30px;
+            height: 1px;
+            background-color: $dachHover;
+            margin-left: -3px;
+            margin-right: 18px;
+        }
+        
+        a:hover{
+            color: $hoverLink;
+            &::before{
+                background-color:$hoverLink;
+            }
+        }
+        .decoration{
+            position: absolute;
+            width: 313px;
+            height: 313px;
+            background:url(./../img/sectionoffers/Ellipse.svg);
+            bottom: 80px;
+            left: 44px;
+        }
+    }
+}
+
+// a{
+//     font-weight: 500;
+//     font-family: 'Roboto', sans-serif ;
+//     font-size: 16px;
+//     padding-bottom: 11.5px;
+//     border-bottom: 1px solid #C4C0B6;
+//     color: #444240;
+// }
